@@ -1,0 +1,28 @@
+{
+  "name": "@cayke1/notifier",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist",
+    "dev": "tsup src/index.ts --watch"
+  },
+  "keywords": [
+    "nestjs",
+    "notifications",
+    "email",
+    "notifier"
+  ],
+  "author": "Cayke Veras",
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/common": "^11.1.2",
+    "resend": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  }
+}
